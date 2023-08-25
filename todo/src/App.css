@@ -31,3 +31,10 @@ p{
 input{
   box-sizing: border-box;
 }
+
+button{
+  background-color: #333974;
+  color: #FFF;
+  padding: 5px 10px;
+  border: none;
+}

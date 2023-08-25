@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Todo from './components/todo'
 
 import './App.css';
+import TodoForm from './components/todoForm';
 
 function App() {
   //Todos: Consulta os dados | setTodos: Insere os dados
@@ -33,6 +34,7 @@ function App() {
         <Todo todo = {todo} />
       ))}
     </div>
+    <TodoForm />
   </div>;
 }
 
