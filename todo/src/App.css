@@ -91,4 +91,8 @@ input, select{
   padding-bottom: 20px;
 }
 
+.filter option{
+  display: flex;
+  justify-content: space-between;
+}
 
