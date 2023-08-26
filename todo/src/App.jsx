@@ -4,6 +4,7 @@ import Todo from './components/todo'
 
 import './App.css';
 import TodoForm from './components/todoForm';
+import Search from './components/search';
 
 function App() {
   //Todos: Consulta os dados | setTodos: Insere os dados
@@ -56,6 +57,7 @@ function App() {
   return (
     <div className='app'>
       <h1>Lista de Tarefas</h1>
+      <Search />
       <div className="todo-list">
         {todos.map((todo) => (
           <Todo key={todo.id} todo = {todo} removeTodo={removeTodo} completeTodo={completeTodo}/>
