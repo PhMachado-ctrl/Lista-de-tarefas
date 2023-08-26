@@ -5,6 +5,7 @@ import Todo from './components/todo'
 import './App.css';
 import TodoForm from './components/todoForm';
 import Search from './components/search';
+import Filter from './components/filter';
 
 function App() {
   //Todos: Consulta os dados | setTodos: Insere os dados
@@ -60,8 +61,10 @@ function App() {
     <div className='app'>
       <h1>Lista de Tarefas</h1>
       <Search search={search} setSearch={setSearch}/>
+      <Filter />
       <div className="todo-list">
-        {todos.filter((todo) => todo.text.toLowerCase().includes(search.toLocaleLowerCase())).map((todo) => (
+        {todos.filter((todo) =>
+         todo.text.toLowerCase().includes(search.toLocaleLowerCase())).map((todo) => (
           <Todo key={todo.id} todo = {todo} removeTodo={removeTodo} completeTodo={completeTodo}/>
         ))}
       </div>
